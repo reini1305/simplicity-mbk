@@ -247,10 +247,11 @@ void handle_init(void) {
   bitmap_layer_set_alignment(image_layer,GAlignCenter);
   layer_add_child(window_layer,bitmap_layer_get_layer(image_layer));
 
-  text_date_layer = text_layer_create(GRect(8, 168-80, 144-8, 80));
+  text_date_layer = text_layer_create(GRect(8, 168-95, 144-8, 80));
   text_layer_set_text_color(text_date_layer, GColorWhite);
   text_layer_set_background_color(text_date_layer, GColorClear);
-  text_layer_set_font(text_date_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_18)));
+  //text_layer_set_font(text_date_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_18)));
+  text_layer_set_font(text_date_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
   layer_add_child(window_layer, text_layer_get_layer(text_date_layer));
 
   text_time_layer = text_layer_create(GRect(7, 168-40, 144-7, 40));
@@ -259,11 +260,12 @@ void handle_init(void) {
   text_layer_set_font(text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_BOLD_SUBSET_33)));
   layer_add_child(window_layer, text_layer_get_layer(text_time_layer));
   
-  next_show_layer = text_layer_create(GRect(0, 11, 38, 40));
+  next_show_layer = text_layer_create(GRect(0, 5, 38, 40));
   text_layer_set_text_color(next_show_layer, GColorWhite);
   text_layer_set_text_alignment(next_show_layer,GTextAlignmentRight);
   text_layer_set_background_color(next_show_layer, GColorClear);
-  text_layer_set_font(next_show_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_18)));
+  //text_layer_set_font(next_show_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_18)));
+  text_layer_set_font(next_show_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
   layer_add_child(window_layer, text_layer_get_layer(next_show_layer));
 
   GRect line_frame = GRect(8, 168-37, 84, 2);
