@@ -3,8 +3,8 @@
   "shortName": "Simply MBK",
   "longName": "Simplicity MBK",
   "companyName": "MBK Solutions",
-  "versionCode": 3,
-  "versionLabel": "1.2.0",
+  "versionCode": 4,
+  "versionLabel": "1.2.1",
   "capabilities": [ "configurable" ],
   "appKeys": {
     "hour_1": 0,

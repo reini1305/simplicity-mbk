@@ -37,26 +37,26 @@ void line_layer_update_callback(Layer *layer, GContext* ctx) {
 void updateInverterLayer(void) {
   if((current_hour>=hour1)||(current_hour<=hour2) )
   {
-    if(!hidden) //not already hidden
+    //if(!hidden) //not already hidden
     {
       hidden = true;
       layer_set_hidden(inverter_layer_get_layer(inverter_layer),hidden);
       layer_mark_dirty(inverter_layer_get_layer(inverter_layer));
     }
-    else{} // do nothing
+    //else{} // do nothing
   }
   else
   {
-    if(hidden) //not hidden
+    //if(hidden) //not hidden
     {
       hidden = false;
       layer_set_hidden(inverter_layer_get_layer(inverter_layer),hidden);
       layer_mark_dirty(inverter_layer_get_layer(inverter_layer));
     }
-    else{} // do nothing
+    //else{} // do nothing
     
   }
-  //APP_LOG(APP_LOG_LEVEL_DEBUG,"Inverter Layer called");
+  APP_LOG(APP_LOG_LEVEL_DEBUG,"Inverter Layer called %d",current_hour);
 }
 
 void updateNextShowLayer(void){
@@ -179,18 +179,18 @@ static void in_handler(DictionaryIterator *iter, void *context) {
   Tuple *next_tuple = dict_find(iter, NEXT_SHOW_KEY);
   if (hour1_tuple) {
     hour1 = hour1_tuple->value->int32;
-    //APP_LOG(APP_LOG_LEVEL_DEBUG, "Got new configuration: %d %d",hour1,hour2 );
+    APP_LOG(APP_LOG_LEVEL_DEBUG, "Got new configuration: %d %d",hour1,hour2 );
   }
   if (hour2_tuple) {
     hour2 = hour2_tuple->value->int32;
-    //APP_LOG(APP_LOG_LEVEL_DEBUG, "Got new configuration: %d %d",hour1,hour2 );
+    APP_LOG(APP_LOG_LEVEL_DEBUG, "Got new configuration: %d %d",hour1,hour2 );
   }
   if(next_tuple) {
     next_show = next_tuple->value->int32;
-    //APP_LOG(APP_LOG_LEVEL_DEBUG, "Next show in: %d",next_show);
+    APP_LOG(APP_LOG_LEVEL_DEBUG, "Next show in: %d",next_show);
     updateNextShowLayer();
   }
-  //APP_LOG(APP_LOG_LEVEL_DEBUG, "Got new configuration: %d",(int)dict_size(iter));
+  APP_LOG(APP_LOG_LEVEL_DEBUG, "Got new configuration: %d",(int)dict_size(iter));
   updateInverterLayer();
 }
 
@@ -200,7 +200,7 @@ void get_next_show(){
   Tuplet value = TupletInteger(1, 42);
   dict_write_tuplet(iter, &value);
   app_message_outbox_send();
-  //APP_LOG(APP_LOG_LEVEL_DEBUG,"Gimme new next show!");
+  APP_LOG(APP_LOG_LEVEL_DEBUG,"Gimme new next show!");
   app_message_outbox_send();
 }
 

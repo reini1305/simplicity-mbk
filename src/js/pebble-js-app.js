@@ -60,10 +60,10 @@ Pebble.addEventListener('showConfiguration', function(e) {
 
 
 Pebble.addEventListener('webviewclosed', function(e) {
-	//console.log('configuration closed');
+	console.log('configuration closed');
 	if (e.response) {
 		var options = JSON.parse(decodeURIComponent(e.response));
-		//console.log('options received from configuration: ' + JSON.stringify(options));
+		console.log('options received from configuration: ' + JSON.stringify(options));
 		hour1 = options['hour1'];
 		hour2 = options['hour2'];
     //console.log("New option:")
@@ -72,13 +72,13 @@ Pebble.addEventListener('webviewclosed', function(e) {
     returnConfigToPebble();
 
 	} else {
-		//console.log('no options received');
+		console.log('no options received');
 	}
 });
 
 function returnConfigToPebble() {
   //console.log("Configuration window returned: " + JSON.stringify(mConfig));
-  //console.log("Sending config to pebble");
+  console.log("Sending config to pebble");
   Pebble.sendAppMessage( { 0: parseInt(hour1), 1: parseInt(hour2), 2:parseInt(next_show) });
   /*,
                         function(e) {
