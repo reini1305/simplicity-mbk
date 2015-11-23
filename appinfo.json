@@ -2,19 +2,16 @@
   "uuid": "5be44f1d-d262-4fa6-aa30-edce01e38a02",
   "shortName": "Simply MBK",
   "longName": "Simplicity MBK",
-  "companyName": "MBK Solutions",
-  "versionCode": 4,
-  "versionLabel": "1.2.1",
-  "capabilities": [ "configurable" ],
-  "appKeys": {
-    "hour_1": 0,
-    "hour_2": 1,
-    "time_to_next": 2
-  },
+  "companyName": "Christian Reinbacher",
+  "versionCode": 8,
+  "versionLabel": "1.6",
+  "capabilities": [
+    ""
+  ],
+  "appKeys": {},
   "watchapp": {
     "watchface": true
   },
-  "appKeys": {},
   "resources": {
     "media": [
       {
@@ -24,22 +21,20 @@
         "file": "images/menu_icon_simplicity.png"
       },
       {
-               "type": "png",
-               "name": "IMAGE_MBK",
-               "file": "images/logo.png"
+        "type": "png",
+        "name": "IMAGE_MBK",
+        "file": "images/logo.png"
       },
       {
-              "type": "png",
-              "name": "BT_CONNECTED",
-              "file": "images/bt_on.png"
+        "type": "png",
+        "name": "BT_CONNECTED",
+        "file": "images/bt_on.png"
       },
-
       {
-              "type": "png",
-              "name": "BT_OFF",
-              "file": "images/bt_off.png"
+        "type": "png",
+        "name": "BT_OFF",
+        "file": "images/bt_off.png"
       },
-
       {
         "type": "font",
         "name": "FONT_ROBOTO_CONDENSED_18",
@@ -51,131 +46,136 @@
         "name": "FONT_ROBOTO_BOLD_SUBSET_33",
         "file": "fonts/Roboto-Bold.ttf"
       },
-              {
-              "name": "BATTERY_100",
-              "type": "png",
-              "file": "images/statusbar/battery-100.png"
-              },
-              {
-              "name": "BATTERY_91",
-              "type": "png",
-              "file": "images/statusbar/battery-91.png"
-              },
-              {
-              "name": "BATTERY_82",
-              "type": "png",
-              "file": "images/statusbar/battery-82.png"
-              },
-              {
-              "name": "BATTERY_73",
-              "type": "png",
-              "file": "images/statusbar/battery-73.png"
-              },
-              {
-              "name": "BATTERY_64",
-              "type": "png",
-              "file": "images/statusbar/battery-64.png"
-              },
-              {
-              "name": "BATTERY_55",
-              "type": "png",
-              "file": "images/statusbar/battery-55.png"
-              },
-              {
-              "name": "BATTERY_46",
-              "type": "png",
-              "file": "images/statusbar/battery-46.png"
-              },
-              {
-              "name": "BATTERY_37",
-              "type": "png",
-              "file": "images/statusbar/battery-37.png"
-              },
-              {
-              "name": "BATTERY_28",
-              "type": "png",
-              "file": "images/statusbar/battery-28.png"
-              },
-              {
-              "name": "BATTERY_19",
-              "type": "png",
-              "file": "images/statusbar/battery-19.png"
-              },
-              {
-              "name": "BATTERY_9",
-              "type": "png",
-              "file": "images/statusbar/battery-9.png"
-              },
-              {
-              "name": "BATTERY_0",
-              "type": "png",
-              "file": "images/statusbar/battery-0.png"
-              },
-              {
-              "name": "CHARGING_100",
-              "type": "png",
-              "file": "images/statusbar/charging-100.png"
-              },
-              {
-              "name": "CHARGING_91",
-              "type": "png",
-              "file": "images/statusbar/charging-91.png"
-              },
-              {
-              "name": "CHARGING_82",
-              "type": "png",
-              "file": "images/statusbar/charging-82.png"
-              },
-              {
-              "name": "CHARGING_73",
-              "type": "png",
-              "file": "images/statusbar/charging-73.png"
-              },
-              {
-              "name": "CHARGING_64",
-              "type": "png",
-              "file": "images/statusbar/charging-64.png"
-              },
-              {
-              "name": "CHARGING_55",
-              "type": "png",
-              "file": "images/statusbar/charging-55.png"
-              },
-              {
-              "name": "CHARGING_46",
-              "type": "png",
-              "file": "images/statusbar/charging-46.png"
-              },
-              {
-              "name": "CHARGING_37",
-              "type": "png",
-              "file": "images/statusbar/charging-37.png"
-              },
-              {
-              "name": "CHARGING_28",
-              "type": "png",
-              "file": "images/statusbar/charging-28.png"
-              },
-              {
-              "name": "CHARGING_19",
-              "type": "png",
-              "file": "images/statusbar/charging-19.png"
-              },
-              {
-              "name": "CHARGING_9",
-              "type": "png",
-              "file": "images/statusbar/charging-9.png"
-              },
-              {
-              "name": "CHARGING_0",
-              "type": "png",
-              "file": "images/statusbar/charging-0.png"
-              },
-              {
-              "name": "CHARGED",
-              "type": "png",
-              "file": "images/statusbar/charged.png"
-              }
+      {
+        "name": "BATTERY_100",
+        "type": "png",
+        "file": "images/statusbar/battery-100.png"
+      },
+      {
+        "name": "BATTERY_91",
+        "type": "png",
+        "file": "images/statusbar/battery-91.png"
+      },
+      {
+        "name": "BATTERY_82",
+        "type": "png",
+        "file": "images/statusbar/battery-82.png"
+      },
+      {
+        "name": "BATTERY_73",
+        "type": "png",
+        "file": "images/statusbar/battery-73.png"
+      },
+      {
+        "name": "BATTERY_64",
+        "type": "png",
+        "file": "images/statusbar/battery-64.png"
+      },
+      {
+        "name": "BATTERY_55",
+        "type": "png",
+        "file": "images/statusbar/battery-55.png"
+      },
+      {
+        "name": "BATTERY_46",
+        "type": "png",
+        "file": "images/statusbar/battery-46.png"
+      },
+      {
+        "name": "BATTERY_37",
+        "type": "png",
+        "file": "images/statusbar/battery-37.png"
+      },
+      {
+        "name": "BATTERY_28",
+        "type": "png",
+        "file": "images/statusbar/battery-28.png"
+      },
+      {
+        "name": "BATTERY_19",
+        "type": "png",
+        "file": "images/statusbar/battery-19.png"
+      },
+      {
+        "name": "BATTERY_9",
+        "type": "png",
+        "file": "images/statusbar/battery-9.png"
+      },
+      {
+        "name": "BATTERY_0",
+        "type": "png",
+        "file": "images/statusbar/battery-0.png"
+      },
+      {
+        "name": "CHARGING_100",
+        "type": "png",
+        "file": "images/statusbar/charging-100.png"
+      },
+      {
+        "name": "CHARGING_91",
+        "type": "png",
+        "file": "images/statusbar/charging-91.png"
+      },
+      {
+        "name": "CHARGING_82",
+        "type": "png",
+        "file": "images/statusbar/charging-82.png"
+      },
+      {
+        "name": "CHARGING_73",
+        "type": "png",
+        "file": "images/statusbar/charging-73.png"
+      },
+      {
+        "name": "CHARGING_64",
+        "type": "png",
+        "file": "images/statusbar/charging-64.png"
+      },
+      {
+        "name": "CHARGING_55",
+        "type": "png",
+        "file": "images/statusbar/charging-55.png"
+      },
+      {
+        "name": "CHARGING_46",
+        "type": "png",
+        "file": "images/statusbar/charging-46.png"
+      },
+      {
+        "name": "CHARGING_37",
+        "type": "png",
+        "file": "images/statusbar/charging-37.png"
+      },
+      {
+        "name": "CHARGING_28",
+        "type": "png",
+        "file": "images/statusbar/charging-28.png"
+      },
+      {
+        "name": "CHARGING_19",
+        "type": "png",
+        "file": "images/statusbar/charging-19.png"
+      },
+      {
+        "name": "CHARGING_9",
+        "type": "png",
+        "file": "images/statusbar/charging-9.png"
+      },
+      {
+        "name": "CHARGING_0",
+        "type": "png",
+        "file": "images/statusbar/charging-0.png"
+      },
+      {
+        "name": "CHARGED",
+        "type": "png",
+        "file": "images/statusbar/charged.png"
+      }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }
